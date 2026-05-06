@@ -7,52 +7,59 @@
     <title>couresera</title>
 <script src="https://cdn.tailwindcss.com"></script></head>
 <body class=" ">
-    <div class="lg:flex bg-black items-center space-x-5 px-15 hidden ">
-        <a href="#" class="text-white  hover:bg-white p-1 border-b-5 border-white hover:text-black">For <span class="font-bold ">Individuals</span></a>
-        <a href="#" class="text-white  hover:bg-white p-1.5 hover:text-black " >For Business</a>
-        <a href="#" class="text-white  hover:bg-white p-1.5 hover:text-black">For Universities</a>
-        <a href="#" class="text-white hover:bg-white p-1.5 hover:text-black">For Governments</a>
-
-    </div>
-
-<div class="lg:flex justify-between items-center py-3 px-6 hidden bg-white">
-  
-  <!-- LEFT SIDE -->
-  <div class="flex items-center space-x-3 relative">
     
+<!-- TOP BLACK BAR -->
+<div class="lg:flex hidden bg-black items-center gap-5 px-16 py-2">
+  <a href="#" class="text-white hover:bg-white p-1 border-b-4 border-white hover:text-black">
+    For <span class="font-bold">Individuals</span>
+  </a>
+  <a href="#" class="text-white hover:bg-white p-1.5 hover:text-black">For Business</a>
+  <a href="#" class="text-white hover:bg-white p-1.5 hover:text-black">For Universities</a>
+  <a href="#" class="text-white hover:bg-white p-1.5 hover:text-black">For Governments</a>
+</div>
+
+<!-- MAIN NAVBAR -->
+<div class="lg:flex hidden justify-between items-center py-3 px-6 bg-white shadow-sm">
+
+  <!-- LEFT -->
+  <div class="flex items-center gap-4">
+
     <img src="./images/coursera.jpg" alt="logo" class="w-28 h-6 object-contain">
 
+    <!-- Explore -->
     <div class="flex items-center gap-2 px-4 py-2 border rounded text-blue-600 font-bold text-sm hover:bg-sky-50 cursor-pointer">
       <button>Explore</button>
       <i class="fa-solid fa-chevron-down text-xs"></i>
     </div>
 
-    <input 
-      type="text" 
-      placeholder="What do you want to learn?" 
-      class="rounded-full border border-gray-300 w-[400px] py-2 px-4 text-sm outline-none"
-    >
+    <!-- SEARCH BAR -->
+    <div class="relative">
+      <input 
+        type="text" 
+        placeholder="What do you want to learn?" 
+        class="rounded-full border border-gray-300 w-[400px] py-2 pl-4 pr-10 text-sm outline-none"
+      >
 
-    <!-- Search Button -->
-    <button class="absolute right-2 bg-blue-600 rounded-full p-2 text-white flex items-center">
-      <i class="fa-solid fa-magnifying-glass"></i>
-    </button>
+      <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-blue-600 rounded-full p-2 text-white">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
 
   </div>
 
-  <!-- RIGHT SIDE -->
-  <div class="flex items-center space-x-5">
+  <!-- RIGHT -->
+  <div class="flex items-center gap-5">
     <a href="#" class="text-gray-500 hover:text-indigo-600">Online Degrees</a>
     <a href="#" class="text-gray-500 hover:text-indigo-600">Careers</a>
 
     <button class="text-blue-500 hover:underline">Log In</button>
+
     <button class="px-4 py-2 rounded border border-blue-500 text-blue-600 hover:bg-sky-50 font-medium">
       Join for Free
     </button>
   </div>
 
 </div>
-    
 
    
     
